@@ -1,7 +1,9 @@
-const mobileMenu = document.getElementById('mobile-menu');
-const navbarMenu = document.querySelector('.navbar-menu');
+function toggleMenu() {
+    const nav = document.querySelector(".mobile-nav");
+    const overlay = document.querySelector(".menu-overlay");
+    const hamburger = document.querySelector(".hamburger-menu");
 
-mobileMenu.addEventListener('click', () => {
-    navbarMenu.classList.toggle('active');
-});
-
+    nav.classList.toggle("active");
+    overlay.classList.toggle("active");
+    hamburger.classList.toggle("active");
+}

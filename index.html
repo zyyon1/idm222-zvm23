@@ -13,13 +13,27 @@
             <div class="header_logo">
                 <img src="images/DrRianVieiraLOGO.png" alt="Logo">
             </div>
-            <div class="hamburger-menu">
+            <!-- Hamburger Menu -->
+            <div class="hamburger-menu" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </nav>
+    
+        <!-- Fullscreen Navigation Menu -->
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Background Blur -->
+        <div class="menu-overlay"></div>
     </header>    
+      
     <main>
         <div class="picture_carousel">
             <img src="images/DrRianVieiraHD.jpeg" alt="RianPicture">
@@ -27,14 +41,12 @@
         <div class="schedule-box">
             <h1>Agende sua Consulta</h1>
             <button class="agendar">
-                <p>
                     AGENDAR
-                </p>
             </button>
         </div>
         <div class="default-bio">
             <h1>Dr. Rian Souza Vieira</h1>
-            <p class="dbio-header">ORTOPEDIA & TRAUMATOLOGIA - 
+            <p class="dbio-header">ORTOPEDIA &amp; TRAUMATOLOGIA - 
                 CIRURGIA DA COLUNA VERTBERAL
             </p>
             <p>
