@@ -52,6 +52,14 @@ p {
     line-height: 1.5;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 header {
     background-color: var(--primary-color);
     height: 100px;
@@ -94,9 +102,60 @@ header {
 }
 
 .picture_carousel img{
-    width: 390px;
+    width: 100%;
     height: auto;
 }
+
+.schedule-box {
+    background-color: var(--primary-color);
+    width: 360px;
+    height: 220px;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule-box h1 {
+    font-family: Khand-Bold;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.agendar {
+    font-family: Hind-Medium;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 1rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+}
+
+.agendar:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.default-bio {
+    background-color: #F5F5F5;
+    text-align: center;
+    font-family: Hind-Regular;
+    font-size: 16px;
+    padding: 2rem;
+}
+
+.dbio-header {
+    padding: .25rem;
+}
+
 
 footer {
     background-color: var(--tertiary-color);
@@ -108,7 +167,7 @@ footer {
     text-align: center;
     font-family: Hind-Medium;
     width: 100%;
-    position: fixed;
+    position: relative;
     bottom: 0px;
     font-size: 18px;
     padding: 1rem;
