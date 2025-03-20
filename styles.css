@@ -35,15 +35,67 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2rem; /* 32px */
+    font-family: Khand-Bold;
+}
+
+h2 {
+    font-size: 1.75rem; /* 28px */
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 header {
     background-color: var(--primary-color);
-    height: 7rem;
+    height: 100px;
     width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spaces out elements */
+    width: 100%;
+}
+
+.header_logo img {
+    margin-left: .5rem;
+    width: 300px;
+    height: auto;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    margin-right: 1rem;
+    cursor: pointer;
+    margin-left: auto; /* Pushes it to the right */
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.picture_carousel img{
+    width: 390px;
+    height: auto;
 }
 
 footer {
@@ -52,23 +104,20 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     font-family: Hind-Medium;
     width: 100%;
     position: fixed;
     bottom: 0px;
+    font-size: 18px;
+    padding: 1rem;
 }
 
-.footer-whatsapp {
-    margin-bottom: 1.5rem;
-    margin-top: 1rem;
-}
-
-.footer-text {
-    margin-top: .5rem;
-}
-
+.footer-whatsapp, 
+.footer-text, 
 .copyright {
-    font-family: Hind-Regular;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 90%;
+    word-wrap: break-word;
 }
