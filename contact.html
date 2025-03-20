@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <nav class="topbar">
+            <div class="header_logo">
+                <img src="images/DrRianVieiraLOGO.png" alt="Logo">
+            </div>
+            <!-- Hamburger Menu -->
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    
+        <!-- Fullscreen Navigation Menu -->
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Background Blur -->
+        <div class="menu-overlay"></div>
+    </header>    
+      
+    <main>
+        <section class="contact-header">
+            <h1>Contato</h1>
+        </section>
+        <section class="contact-form">
+            <h1>Entre em Contato</h1>
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+
+                <label for="whatsapp">Celular/Whatsapp:</label>
+                <input type="tel" id="whatsapp" name="whatsapp" required placeholder="Digite seu celular ou Whatsapp">
+
+                <label for="assunto">Selecione o assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="" disabled selected>Selecione o assunto</option>
+                    <option value="agendar-consulta">Agendar Consulta</option>
+                    <option value="contato">Contato</option>
+                    <option value="duvidas">Dúvidas</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-whatsapp">16 99726.5046</p>
+        <p class="footer-text">CAO 16 3329.4105</p>
+        <p class="footer-text">W. Offices 16 3514.1828</p>
+        <p class="footer-text">rianvieira@hotmail.com</p>
+        <p class="copyright">&copy; 2025 Dr. Rian Souza Vieira. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
