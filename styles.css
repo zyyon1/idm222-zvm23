@@ -150,6 +150,7 @@ header {
     font-family: Hind-Regular;
     font-size: 16px;
     padding: 2rem;
+
 }
 
 .dbio-header {
@@ -157,6 +158,9 @@ header {
     font-size: 20px;
 }
 
+.default-bio p{
+    margin: .5rem;
+}
 
 footer {
     background-color: var(--tertiary-color);
@@ -210,7 +214,7 @@ footer {
 
 .mobile-nav a {
     font-family: Hind-Medium;
-    font-size: 24px;
+    font-size: 32px;
     color: white;
     text-decoration: none;
     transition: color 0.3s;
@@ -275,7 +279,7 @@ footer {
 }
 
 .hamburger-menu.active span:nth-child(3) {
-    transform: translateY(-12px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
 }
 
 /* === Section: Sobre Dr. Vieira === */
@@ -387,4 +391,57 @@ footer {
 
 .submit-button:hover {
     background-color: var(--primary-color);
+}
+
+.nav-links {
+    display: none;
+}
+
+/* Tablet (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .header_logo img {
+        width: 250px;
+    }
+    
+    .schedule-box {
+        width: 80%;
+    }
+
+    .default-bio {
+        font-size: 18px;
+        padding: 3rem;
+    }
+}
+
+/* Desktop Navigation Adjustments */
+@media screen and (min-width: 1025px) {
+    header {
+        height: 120px; /* Increase header height */
+        padding: 0 2rem;
+    }
+
+    .topbar {
+        justify-content: space-between;
+    }
+
+    .hamburger-menu {
+        display: none; /* Hide the hamburger menu */
+    }
+
+    .topbar .nav-links {
+        display: flex;
+        gap: 2rem; /* Space between links */
+    }
+
+    .nav-links a {
+        font-family: Hind-Medium;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: #d1fae5; /* Light green for hover effect */
+    }
 }
