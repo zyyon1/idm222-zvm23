@@ -101,10 +101,42 @@ header {
     border-radius: 5px;
 }
 
-.picture_carousel img{
+.picture_carousel {
     width: 100%;
-    height: auto;
+    height: 295px;
+    overflow: hidden;
+    position: relative;
 }
+
+.carousel-images {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    animation: fade 18s infinite;
+}
+
+.carousel-images img:nth-child(1) { animation-delay: 0s; }
+.carousel-images img:nth-child(2) { animation-delay: 6s; }
+.carousel-images img:nth-child(3) { animation-delay: 12s; }
+
+@keyframes fade {
+    0% { opacity: 0; }
+    33% { opacity: 1; }
+    66% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.about-box, .contact-box {
+    display: none; /* Hide extra boxes on mobile */
+}
+
 
 .schedule-box {
     background-color: var(--primary-color);
@@ -150,7 +182,7 @@ header {
     font-family: Hind-Regular;
     font-size: 16px;
     padding: 2rem;
-
+    width: 100%;
 }
 
 .dbio-header {
@@ -405,7 +437,7 @@ footer {
     
     .schedule-box {
         width: 80%;
-    }
+    }   
 
     .default-bio {
         font-size: 18px;
@@ -420,8 +452,15 @@ footer {
         padding: 0 2rem;
     }
 
+    .header_logo img {
+        margin-left: .5rem;
+        width: 460px;
+        height: auto;
+    }
+
     .topbar {
         justify-content: space-between;
+        padding-right: 2rem;
     }
 
     .hamburger-menu {
@@ -444,4 +483,78 @@ footer {
     .nav-links a:hover {
         color: #d1fae5; /* Light green for hover effect */
     }
+
+    .picture_carousel {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .carousel-images {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    .carousel-images img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+        animation: fade 12s infinite;
+    }
+    
+    .carousel-images img:nth-child(1) { animation-delay: 0s; }
+    .carousel-images img:nth-child(2) { animation-delay: 4s; }
+    .carousel-images img:nth-child(3) { animation-delay: 8s; }
+    
+    @keyframes fade {
+        0% { opacity: 0; }
+        33% { opacity: 1; }
+        66% { opacity: 0; }
+        100% { opacity: 0; }
+    }
+
+    .box-container {
+        display: flex; /* Ensure flexbox layout */
+        flex-direction: row;
+        justify-content: space-evenly; /* Spread boxes evenly */
+        align-items: center;
+        gap: 1rem; /* Space between boxes */
+        width: 100%;
+    }
+
+    .schedule-box, .about-box, .contact-box {
+        display: flex; /* Make sure all boxes are visible */
+        width: 360px;
+        height: 220px;
+        background-color: var(--primary-color);
+        border-radius: 10px;
+        padding: 0;
+        margin: 1rem 0;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .schedule-box, .about-box, .contact-box h1 {
+        font-family: Khand-Bold;
+        font-size: 32px;
+        color: white;
+    }
+    
+    .default-bio p {
+        line-height: 1.4; /* Tighten line spacing */
+        font-size: 1rem;
+        max-width: 550px; /* Prevent overly wide text */
+        margin: 0 auto; /* Center the text */
+    }
+
+    .contact-form {
+        scale: 100%;
+        margin: 1rem 0;
+    }
+    
 }
